@@ -4,13 +4,7 @@ public:
         int n = grid.size();
         int m = grid[0].size();
         
-        vector<vector<int>>dp(n,vector<int>(m));
-        
-        dp = grid;
 
-        
-        
-        
         for(int i=1;i<m;i++)
             grid[0][i]+=grid[0][i-1];
         
@@ -27,15 +21,7 @@ public:
                 
             }
         }
-//         for(int i=0;i<n;i++)
-//         {
-//             for(int j=0;j<m;j++)
-//             {
-//                 cout<<dp[i][j]<<" ";
-                
-//             }
-//             cout<<endl;
-//         }
+
         return grid[n-1][m-1];
         
         
