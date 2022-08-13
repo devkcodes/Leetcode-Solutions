@@ -10,9 +10,9 @@ public:
         
         for(auto x :mp)
             if(x.second>1)
-                ans = x.first;
+                return x.first;
        
         
-        return ans;
+        return 0;
     }
 };
